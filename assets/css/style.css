@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    /* padding: 0;
+    margin: 5px; */
+}
+
+html {
+    width: 90%;
+    margin: auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    background-color: steelblue;
+    color: black;
+    margin-bottom: 24px;
+}
+
+h1 {
+    
+    font-size: 32px;
+    background-color: ghostwhite;
+    padding: 8px 15px 8px 0;
+}
+ 
+nav {
+    margin-right: 20px;
+    padding-top: 24px;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 200px;
+    list-style-type: none; /*set the navegation list style to none*/
+}
+
+nav ul li {
+    display: inline-flex;
+    margin-left: 20px;
+    color: black;
+}
+a {
+    color: black;
+}
+
+#owner-pic img {
+    height: 25%;
+    width: 25%;
+}
+
+#owner-pic{
+    margin-bottom: 64px;
+    background-image: url(../images/Bacground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main {
+  
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    
+}
+
+h2 {
+    text-align: justify;
+    margin-left: 8px;
+    flex: 0 0 8% ;
+}
+
+#bio {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    clear: both;
+}
+
+.side-title {
+    border-right: 4px solid darkblue;
+    text-align: right;
+    padding: 8px;
+    
+}
+
+#bio p {
+    text-align: justify;
+    margin-left: 20px;
+    
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+
+.card {
+    /* display: flex; */
+    /* flex: 1 1 0; */
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 8px;
+    min-height: 750px;
+    max-height: 150px;
+       
+}
+
+.pics {
+    display: flex;
+    justify-content: center;
+}
+
+#content > h2 {
+    flex: 0 0 8%;
+}
+
+#content > .pics {
+    flex: 0 0 80%;
+}
+.flex-container :first-child{
+    display: flex;
+}
+
+.flex-container :first-child {
+    height: 100%;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+   padding: 36px 0 36px 0;
+}
+
+
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-flex;
+    margin-left: 48px;
+}
+
+@media screen and (max-width: 1000px) {
+    .card img {
+    
+    }
+  
+}
+  
+@media screen and (max-width: 468px) {
+    header, main {
+        flex-direction: column;
+    }
+   
+}
+  
