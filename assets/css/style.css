@@ -146,20 +146,20 @@ footer ul li {
   
 @media screen and (max-width: 1024px) {
     img {
-        width: 450px;
+        width: 100%;
         
     }
 }
 
 @media screen and (max-width: 768px) {
     img {
-        width: 300px;
+        max-width:100% ;
         height: 150px;
         
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     h1 {    
         font-size: 24px;
       
@@ -170,13 +170,12 @@ footer ul li {
     
     }
 
-    img {   
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 5px;
-        width: 200px;
+    img {
+        display: block;
+
+        width: auto;
         height: 75px;
-        object-fit: contain;
+        
     }
     
     .side-title {
@@ -204,38 +203,20 @@ footer ul li {
         display: block;
     }
 
+    .flex-container :first-child{
+             
+        width: auto;
+        height: 75px;
+        
+      
+    }
+
     footer ul li {
         margin-left: 20px;        
     }
 
 }
 
-@media screen and (max-width: 320px) {
-    img {   
-        width: 150px;
-        
-    }
 
-}
 
-@media screen and (max-width: 280px) {
-    header {    
-        display: block;
-      
-    }
-
-    img {   
-        width: 130px;
-        
-    }
-
-    .flex-container :first-child{
-     
-        width: 130px;
-        height: 75px;
-        
-      
-    }
-    
-}
 
