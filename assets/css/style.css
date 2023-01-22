@@ -136,31 +136,39 @@ footer ul li {
     margin-left: 48px;
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 2405px) {
     img {
-        width: 600px;
+        display: block;
+        width: 1128px;
+        height: 450px;
+        
+    }   
+}
+
+@media screen and (max-width: 1346px) {
+    img {
+        width: 450px;
         height: 300px;
         
     }   
 }
   
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1046px) {
     img {
-        width: 100%;
+        width: 338px;
         
     }
 }
 
-@media screen and (max-width: 768px) {
-    img {
-        max-width:100% ;
-        height: 150px;
-        
-    }
-}
 
-@media screen and (max-width: 500px) {
-    h1 {    
+
+@media screen and (max-width: 822px) {
+    header {
+        display: block;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;  
         font-size: 24px;
       
     }
@@ -173,8 +181,8 @@ footer ul li {
     img {
         display: block;
 
-        width: auto;
-        height: 75px;
+        width: 100%;
+        height: auto;
         
     }
     
@@ -193,8 +201,7 @@ footer ul li {
     }
 
     p {
-        text-align: justify;
-       
+        text-align: justify;       
         font-size: 20px;
         line-height: 28px;
     }
@@ -203,14 +210,7 @@ footer ul li {
         display: block;
     }
 
-    .flex-container :first-child{
-             
-        width: auto;
-        height: 75px;
-        
-      
-    }
-
+    
     footer ul li {
         margin-left: 20px;        
     }
