@@ -1,105 +1,107 @@
+/* Set background color and font family */
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: whitesmoke;
 
 }
-
-header {
+/* Style header section */
+header {    
     display: flex;
-    justify-content: space-between;    
-    background-color: steelblue;
+    justify-content: space-between;
+    background-color: steelblue; 
     color: black;
     padding: 24px 0;
     margin-bottom: 24px;
 }
-
+/* style Name */
 h1 {    
     font-size: 32px;
     background-color: ghostwhite;
     padding: 8px 15px 8px 0;
 
 }
- 
+/* set spacing for the navigation area */
 nav {   
     margin-right: 20px;
     padding-top: 24px;
 }
-
+/* set style for the header list and footer list */
 .list {
-    display: flex;
+    display: flex;  
     flex-wrap: wrap;
     font-size: 20px;
     list-style-type: none; /*set the navegation list style to none*/
 }
-
+/* set spacing for the list element */
 li { 
     margin-left: 20px;
-   
+    
 }
-
+/* set color for the anchor element */
 a {
     color: black;
 }
-
+/* owner pic Section margin and background settings */
 #owner-pic{
     margin-bottom: 64px;
+    /* place a background pic for this section */
     background-image: url(../images/Bacground.jpg);
     background-size: cover;
     background-position: center;
 }
-
+/* owner pic size */
 #owner-pic img {
     height: auto;
     width: 20%;
 }
-
-
-
+/* set style and margin settings for each section on the main section */
 .content {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
     padding: 8px;
-    margin: 8px;
-    
-    
+    margin: 8px;    
 }
-
+/* set area for the side title section */
 .side-title {
     border-right: 4px solid darkblue;
     padding-right: 4px;
     width: auto;
     
 }
-
+/* set font and style for the side text */
 .side-text{
     font-size: 24px;
     text-align: right;
     width: 100px;
     
 }
-
+/* set style for the paragraph */
 p {
     text-align: justify;
     margin-left: 20px;
     font-size: 20px;
     line-height: 36px;
 }
-
-.card {
+/* Set Style for the card section */
+.cardArea {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;    
+    background-color: ghostwhite;   
+}
+/* set margin for the cards section */
+.card {
     margin-bottom: 28px;
        
 }
-
+/* set the size of the first child  */
 .flex-container :first-child{
     width: 100%;
     height: auto;
   
 }
-
+/* Set the size and style for the all images */
 img {
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -108,20 +110,23 @@ img {
     height: 300px;
     object-fit: contain;
 }
-  
+/* set a hoover effect ond the image */
 img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
-
-@media screen and (min-width: 2405px) {
-    img {
-        display: block;
-        width: 1128px;
-        height: 450px;
-        
-    }   
+/* set footer background color */
+footer{
+    background-color: ghostwhite;
 }
-
+/* set Style for widescreen */
+@media screen and (min-width: 1826px) {
+    body{
+        /* set max width and margin to the body */
+        max-width: 1826px;
+        margin: auto;
+    }
+}
+/* set width and height for pics at max screen of 1346 px */
 @media screen and (max-width: 1346px) {
     img {
         width: 450px;
@@ -129,72 +134,68 @@ img:hover {
         
     }   
 }
-  
+/* set width and height for pics at max screen of 1046 px */  
 @media screen and (max-width: 1046px) {
     img {
         width: 338px;
         
     }
 }
-
+/* set style and layout for screen less than 822px */
 @media screen and (max-width: 822px) {
     header {
+        /* display name and nav as blocks */
         display: block;
     }
-    
+    /* display name on the center and reduce size to 24px */
     h1 {
         display: flex;
         justify-content: center;  
         font-size: 24px;
  
     }
-
-   nav{
-    display: block;
-    
-   }
+    /* display list with space between and reduce sixe to 16px */
     .list {        
         justify-content: space-between;
         font-size: 16px;
 
     }
-
+    /* reduce margin bottom on the owner pic section */
     #owner-pic{
         margin-bottom: 20px;
     
     }
-
-    img {
+    /* Change sections to block */
+    .content {
         display: block;
-        width: 100%;
-        height: auto;
-        
-    }
-    
+    }   
+    /* Change border from right to bottom  */
     .side-title {
         border-right: 0;
         border-bottom: 4px solid darkblue;
         margin-bottom: 20px;
         
     }
-    
+    /* alignt tex to left and reduce size to 20px */
     .side-text{
         text-align: left;
         width: auto;
         font-size: 20px;
     }
-
-    p {
-              
+    /* reduce paragraph font size and line height */
+    p {              
         font-size: 18px;
         line-height: 28px;
     }
     
-    .content {
+    /* display images on blocks with auto height and 100% width */
+    img {
         display: block;
-    }
-
-   
+        width: 100%;
+        height: auto;
+        
+    } 
+      
 }
 
 

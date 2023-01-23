@@ -3,19 +3,21 @@
 
 ## Description
 
-This projet is to create a portfolio webpage.
+Portfolio webpage with the picture, works, contact and description of myself. 
 
-## Installation
+## Link
 
-N/A
+https://franklynsuriel.github.io/Portfolio/
 
 ## Usage
 
-To use this portfolio, you can open it in a browser.
+To use this portfolio, you can open it in a browser. You can click on the navigation bar to go to the different sections and a linkedin profile. The about me section will describe me and the work section will showcase my latest project. The contact me section will show my phone number my github repositories and my email
 
-## Credits
-© 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+The following image shows the web application's appearance and functionality:
+
+![A portfolio webpage with info of the owner](./assets/images/Portfolio.jpg)
+
 
 ## License
 
-N/A
+MIT
