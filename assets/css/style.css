@@ -31,6 +31,7 @@ nav {
     flex-wrap: wrap;
     font-size: 20px;
     list-style-type: none; /*set the navegation list style to none*/
+    padding: 0;
 }
 /* set spacing for the list element */
 li { 
@@ -94,6 +95,10 @@ p {
 .card {
     margin-bottom: 28px;
        
+}
+/* center project title */
+.projectTitle {
+    text-align: center;
 }
 /* set the size of the first child  */
 .flex-container :first-child{
@@ -200,4 +205,14 @@ footer{
         
     } 
       
+}
+
+/* set style and layout for screen less than 424px */
+@media screen and (max-width: 424px) {
+
+.list {    
+    font-size: 11px;
+
+}
+
 }
