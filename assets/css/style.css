@@ -131,23 +131,53 @@ footer{
         margin: auto;
     }
 }
-/* set width and height for pics at max screen of 1346 px */
-@media screen and (max-width: 1394px) {
+/* set width and height for pics at max screen of 1524 px */
+@media screen and (min-width: 1524px) {
+    img {        
+        width: 670px;
+        height: 300px;
+    }
+}
+/* set width and height for pics at max screen of 1324 px */
+@media screen and (max-width: 1386px) {
     img {
-        width: 450px;
+        width: 520px;
+        height: 300px;
+        
+    }   
+}
+/* set width and height for pics at max screen of 1224 px */
+@media screen and (max-width: 1224px) {
+    img {
+        width: 470px;
+        height: 300px;
+        
+    }   
+}
+/* set width and height for pics at max screen of 1124 px */
+@media screen and (max-width: 1124px) {
+    img {
+        width: 420px;
         height: 300px;
         
     }   
 }
 /* set width and height for pics at max screen of 1046 px */  
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
     img {
-        width: 320px;
+        width: 344px;
+        
+    }
+}
+/* set width and height for pics at max screen of 868 px */  
+@media screen and (max-width: 868px) {
+    img {
+        width: 294px;
         
     }
 }
 /* set style and layout for screen less than 822px */
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 768px) {
     header {
         /* display name and nav as blocks */
         display: block;
