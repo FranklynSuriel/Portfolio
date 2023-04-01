@@ -4,6 +4,11 @@ body {
     background-color: whitesmoke;
 
 }
+
+/* set scroll behavior to smooth */
+html {
+    scroll-behavior: smooth;
+}
 /* Style header section */
 header {    
     display: flex;
